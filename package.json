@@ -1,0 +1,25 @@
+{
+  "name": "evals-demo",
+  "version": "1.0.0",
+  "description": "A progressive, hands-on introduction to LLM evals: a minimal script, a CLI tool, and a full web app.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "eval:minimal": "node examples/01-minimal-eval.js",
+    "eval:cli": "node examples/02-cli-evaluator.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.395.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.1"
+  }
+}
