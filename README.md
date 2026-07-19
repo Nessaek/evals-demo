@@ -1,24 +1,6 @@
 # Evals Demo
 
-A hands-on, progressively-more-complex introduction to **LLM evals** — the automated tests that grade a model's outputs against expectations so you can compare models, catch regressions, and ship prompt changes with confidence.
-
-Every eval, no matter how sophisticated, boils down to the same loop:
-
-```
-input → model output → scoring function → pass/fail + score → aggregate metrics
-```
-
-This repo shows that loop three times, at increasing levels of realism, so you can see exactly what each layer of complexity buys you.
-
-## The three examples
-
-| # | File | What it adds |
-|---|------|---------------|
-| 1 | [`examples/01-minimal-eval.js`](examples/01-minimal-eval.js) | The eval loop in ~25 lines: one evaluator, one test case, two model outputs. Nothing else. |
-| 2 | [`examples/02-cli-evaluator.js`](examples/02-cli-evaluator.js) | Multiple evaluator types (exact match, keyword match, similarity, JSON schema), multiple test cases, multiple models, a leaderboard summary — still a single plain script. |
-| 3 | [`src/`](src) | The same concepts wrapped in a React app (EvalCraft): an editable playground, mock latency/cost accounting, and a dashboard — i.e. what an internal eval *tool* looks like once you build a UI on top of the loop. |
-
-Read them in order. Each one is the previous one with one more real-world concern bolted on.
+Project to demo how evals work
 
 ## Running the examples
 
